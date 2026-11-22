@@ -1,0 +1,18 @@
+- generic [ref=f1e6]:
+  - main [ref=f1e7]:
+    - generic [ref=f1e11]:
+      - heading "Login" [level=2] [ref=f1e13]
+      - alert [ref=f1e14]: The email must be a valid email address.
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - generic [ref=f1e18]: Email
+          - textbox "E-Mail Address" [active] [ref=f1e19]: invalid-email
+          - alert [ref=f1e20]: The email must be a valid email address.
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]: Password
+          - textbox "Password" [ref=f1e23]
+          - link "Forgot Your Password?" [ref=f1e25] [cursor=pointer]:
+            - /url: https://erp.globalbooks.in/forgot-password/en
+        - button "Login" [ref=f1e27] [cursor=pointer]
+  - contentinfo [ref=f1e28]:
+    - generic [ref=f1e29]: Copyright © ERP 2026

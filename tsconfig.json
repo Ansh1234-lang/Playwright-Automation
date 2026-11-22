@@ -1,0 +1,24 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+  },
+  "include": [
+    "tests/**/*.ts",
+    "playwright.config.ts"
+  ]
+}
+
+// use: {
+//   baseURL: 'https://erp.globalbooks.in',
+//   trace: 'on-first-retry',
+//   screenshot: 'only-on-failure',
+// },

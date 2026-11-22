@@ -1,0 +1,16 @@
+- generic [ref=e6]:
+  - main [ref=e7]:
+    - generic [ref=e11]:
+      - heading "Login" [level=2] [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: Email
+          - textbox "E-Mail Address" [active] [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e20]: Password
+          - textbox "Password" [ref=e21]
+          - link "Forgot Your Password?" [ref=e23] [cursor=pointer]:
+            - /url: https://erp.globalbooks.in/forgot-password/en
+        - button "Login" [ref=e25] [cursor=pointer]
+  - contentinfo [ref=e26]:
+    - generic [ref=e27]: Copyright © ERP 2026

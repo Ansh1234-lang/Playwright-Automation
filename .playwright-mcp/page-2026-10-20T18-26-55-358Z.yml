@@ -1,0 +1,162 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: https://erp.globalbooks.in/home
+      - generic [ref=e6]:
+        - region "scrollable content" [active] [ref=e11]:
+          - tablist [ref=e13]:
+            - listitem "General" [ref=e14]:
+              - tab "" [ref=e15] [cursor=pointer]
+            - listitem "Inward" [ref=e17]:
+              - tab "" [selected] [ref=e18] [cursor=pointer]
+            - listitem "Return Order" [ref=e20]:
+              - tab "" [ref=e21] [cursor=pointer]
+            - listitem "Challan" [ref=e23]:
+              - tab "" [ref=e24] [cursor=pointer]
+            - listitem "PSO Report" [ref=e26]:
+              - tab "" [ref=e27] [cursor=pointer]
+            - listitem "Productivity" [ref=e29]:
+              - tab "" [ref=e30] [cursor=pointer]
+        - region "scrollable content" [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - text: 
+              - tabpanel "" [ref=e197]:
+                - list [ref=e198]:
+                  - listitem [ref=e199]:
+                    - link " Manage PO" [ref=e200] [cursor=pointer]:
+                      - /url: "#!"
+                      - generic [ref=e201]: 
+                      - generic [ref=e203]: Manage PO
+              - text:     
+            - list
+  - banner [ref=e53]:
+    - generic [ref=e54]:
+      - list [ref=e56]:
+        - listitem [ref=e57]:
+          - button "# mohit raina " [ref=e58] [cursor=pointer]:
+            - img "#" [ref=e60]
+            - generic [ref=e61]: mohit raina
+            - generic [ref=e62]: 
+          - text: 
+      - list [ref=e64]:
+        - listitem [ref=e155]:
+          - link "Pending Tasks" [ref=e156] [cursor=pointer]:
+            - /url: https://erp.globalbooks.in/home/task
+            - generic [ref=e157]: 
+            - generic [ref=e158]: "5"
+        - listitem [ref=e65]:
+          - button "" [ref=e66] [cursor=pointer]
+          - text: 
+        - listitem [ref=e68]:
+          - button " EN " [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - generic [ref=e71]: EN
+            - generic [ref=e72]: 
+  - generic [ref=e74]:
+    - generic [ref=e78]:
+      - heading "Pending Task" [level=4] [ref=e80]
+      - list [ref=e81]:
+        - listitem [ref=e82]:
+          - link "Dashboard" [ref=e83] [cursor=pointer]:
+            - /url: https://erp.globalbooks.in/dashboard
+        - listitem [ref=e84]: Pending Task
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - heading "Pending Task" [level=4] [ref=e87]
+        - paragraph [ref=e88]: All tasks assigned to you that are yet to be completed.
+        - generic [ref=e92]:
+          - heading "Attention !" [level=4] [ref=e93]
+          - paragraph [ref=e94]:
+            - text: You have
+            - strong [ref=e95]: "5"
+            - text: pending
+            - strong [ref=e96]: Return Order
+            - text: tasks.
+      - generic [ref=e97]:
+        - generic [ref=e100]:
+          - heading "Pending Return Order" [level=5] [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]: "Created: 16 Oct 2026 03:32 PM"
+            - link "RO-PO-20261016-005" [ref=e105] [cursor=pointer]:
+              - /url: https://erp.globalbooks.in/ro/5
+        - generic [ref=e108]:
+          - heading "Pending Return Order" [level=5] [ref=e110]
+          - generic [ref=e111]:
+            - generic [ref=e112]: "Created: 16 Oct 2026 03:26 PM"
+            - link "RO-PO-20261016-004" [ref=e113] [cursor=pointer]:
+              - /url: https://erp.globalbooks.in/ro/4
+        - generic [ref=e116]:
+          - heading "Pending Return Order" [level=5] [ref=e118]
+          - generic [ref=e119]:
+            - generic [ref=e120]: "Created: 16 Oct 2026 03:25 PM"
+            - link "RO-PO-20261016-003" [ref=e121] [cursor=pointer]:
+              - /url: https://erp.globalbooks.in/ro/3
+        - generic [ref=e124]:
+          - heading "Pending Return Order" [level=5] [ref=e126]
+          - generic [ref=e127]:
+            - generic [ref=e128]: "Created: 16 Oct 2026 03:18 PM"
+            - link "RO-PO-20261016-002" [ref=e129] [cursor=pointer]:
+              - /url: https://erp.globalbooks.in/ro/2
+        - generic [ref=e132]:
+          - heading "Pending Return Order" [level=5] [ref=e134]
+          - generic [ref=e135]:
+            - generic [ref=e136]: "Created: 16 Oct 2026 03:16 PM"
+            - link "RO-PO-20261016-001" [ref=e137] [cursor=pointer]:
+              - /url: https://erp.globalbooks.in/ro/1
+  - generic [ref=e138]:
+    - button "Navigation assistant" [ref=e139] [cursor=pointer]:
+      - generic [ref=e140]: 
+      - generic [ref=e141]: Navigation
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - generic [ref=e162]: Navigation
+          - generic [ref=e163]: Find any page
+        - button "Close" [ref=e164] [cursor=pointer]:
+          - generic [ref=e165]: 
+      - generic [ref=e166]:
+        - generic [ref=e167]: 
+        - textbox "Type or speak page name" [ref=e168]
+        - button "Speak" [ref=e169] [cursor=pointer]:
+          - generic [ref=e170]: 
+      - generic [ref=e171]: Select a page to open
+      - generic [ref=e172]:
+        - button "Account Purchase General · /account/purchase" [ref=e173] [cursor=pointer]:
+          - generic [ref=e174]: Account Purchase
+          - generic [ref=e175]: General · /account/purchase
+        - button "Account Purchase Create General · /account/purchase/create" [ref=e176] [cursor=pointer]:
+          - generic [ref=e177]: Account Purchase Create
+          - generic [ref=e178]: General · /account/purchase/create
+        - button "Account Purchase Create Blank General · /account/purchase/create/blank" [ref=e179] [cursor=pointer]:
+          - generic [ref=e180]: Account Purchase Create Blank
+          - generic [ref=e181]: General · /account/purchase/create/blank
+        - button "Account Purchase Invoices General · /account/invoices" [ref=e182] [cursor=pointer]:
+          - generic [ref=e183]: Account Purchase Invoices
+          - generic [ref=e184]: General · /account/invoices
+        - button "Account Return PO Create General · /account/return-po-order/create" [ref=e185] [cursor=pointer]:
+          - generic [ref=e186]: Account Return PO Create
+          - generic [ref=e187]: General · /account/return-po-order/create
+        - button "Account Return PO Invoice Print General · /account/return-po-order/invoice/print" [ref=e188] [cursor=pointer]:
+          - generic [ref=e189]: Account Return PO Invoice Print
+          - generic [ref=e190]: General · /account/return-po-order/invoice/print
+        - button "Account Return PO Invoice Show General · /account/return-po-order/invoice/show" [ref=e191] [cursor=pointer]:
+          - generic [ref=e192]: Account Return PO Invoice Show
+          - generic [ref=e193]: General · /account/return-po-order/invoice/show
+        - button "Account Return PO Invoices General · /account/return-po-order/invoices" [ref=e194] [cursor=pointer]:
+          - generic [ref=e195]: Account Return PO Invoices
+          - generic [ref=e196]: General · /account/return-po-order/invoices
+  - contentinfo [ref=e142]:
+    - generic [ref=e143]: Copyright © ERP 2026
+  - dialog [ref=e146]:
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - heading "We use cookies!" [level=2] [ref=e149]
+        - generic [ref=e150]:
+          - text: Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it.
+          - button "Let me choose" [ref=e151] [cursor=pointer]
+      - generic [ref=e152]:
+        - button "Accept all" [ref=e153] [cursor=pointer]
+        - button "Reject all" [ref=e154] [cursor=pointer]
+  - tooltip "Inward" [ref=e207]
