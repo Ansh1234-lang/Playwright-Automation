@@ -21,6 +21,15 @@
 - **Read-only coverage:** [the Create PO form test](../../tests/non-grain-po/dropdown-options-selection.spec.ts) opens the route, checks the heading and PO-number heading, verifies the four required dropdowns are visible, enabled, and required, confirms each has options, and checks for `Prepaid` and `Postpaid`. It does not select options or submit the form.
 - **Live-data-dependent values:** Agent, Supplier, and Category option lists depend on current ERP data. The test deliberately checks that options are available without asserting fixed values. Use only approved options when a future scenario requires a selection.
 
+## Approved PO Test Data
+
+Before any mutation test, explicitly confirm approved values for Agent, Supplier, Non-Grain Category, Grain Product, Grain Sub-product, Unit, Quantity, Bags, Unit Price, GST, and any other required transaction values.
+
+- `ERP_TEST_AGENT_OPTION` is the existing environment-variable mechanism for Agent test data, but its current value is not confirmed as an approved automation fixture.
+- Historical values such as `Ruby Agent` and `MANAY INTERPRISES` are observations, not permanent test data.
+- Do not automatically promote currently visible live dropdown values to fixtures.
+- Read-only tests may inspect live data without modifying it. Mutation tests must use explicitly approved test data.
+
 ## Operations
 
 # 1.  Create PO 
