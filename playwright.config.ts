@@ -13,5 +13,32 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+  projects: [
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.spec\.ts/,
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: { cookies: [], origins: [] },
+      },
+    },
+    {
+      name: 'chromium',
+      testIgnore: [/auth\.setup\.spec\.ts/, /\.security-guard\.spec\.ts$/],
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: '.auth/purchase-executive.json',
+      },
+    },
+    {
+      name: 'security-guard',
+      testMatch: /\.security-guard\.spec\.ts$/,
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: '.auth/security-guard.json',
+      },
+    },
+  ],
 });

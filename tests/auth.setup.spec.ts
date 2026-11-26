@@ -1,36 +1,40 @@
 
 import { test, expect } from '@playwright/test';
-import dotenv from 'dotenv';
-
-dotenv.config();
 import fs from 'node:fs/promises';
 
 const roles = [
   {
-    email: process.env.ERP_PURCHASE_EXECUTIVE_EMAIL,
-    password: process.env.ERP_PURCHASE_EXECUTIVE_PASSWORD,
+    name: 'Purchase Executive',
+    emailEnv: 'ERP_PRIYA_PURCHASE_EXECUTIVE_EMAIL',
+    passwordEnv: 'ERP_PRIYA_PURCHASE_EXECUTIVE_PASSWORD',
     stateFile: '.auth/purchase-executive.json',
   },
   {
-    email: process.env.ERP_SECURITY_GUARD_EMAIL,
-    password: process.env.ERP_SECURITY_GUARD_PASSWORD,
+    name: 'Security Guard',
+    emailEnv: 'ERP_MAHESH_SECURITY_GUARD_EMAIL',
+    passwordEnv: 'ERP_MAHESH_SECURITY_GUARD_PASSWORD',
     stateFile: '.auth/security-guard.json',
   },
 ];
 
 for (const role of roles) {
-  test(`save authenticated session: ${role.stateFile}`, async ({
+  test(`save authenticated session: ${role.name}`, async ({
     page,
     context,
   }) => {
-    if (!role.email || !role.password) {
-      throw new Error(`Missing credentials for ${role.stateFile}`);
+    const email = process.env[role.emailEnv];
+    const password = process.env[role.passwordEnv];
+
+    if (!email || !password) {
+      throw new Error(
+        `Missing ${role.emailEnv} or ${role.passwordEnv} for ${role.name}`,
+      );
     }
 
     await page.goto('/login');
 
-    await page.locator('input[name="email"]').fill(role.email);
-    await page.locator('input[name="password"]').fill(role.password);
+    await page.locator('input[name="email"]').fill(email);
+    await page.locator('input[name="password"]').fill(password);
     await page.getByRole('button', { name: 'Login' }).click();
 
     await expect(page).toHaveURL(/\/home\/task/);

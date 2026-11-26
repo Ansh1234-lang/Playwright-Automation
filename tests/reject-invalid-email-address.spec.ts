@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { randomUUID } from 'node:crypto';
 
 test.describe('Login validation', () => {
   test('Reject invalid email address', async ({ page }) => {
@@ -9,7 +10,7 @@ test.describe('Login validation', () => {
     await page.getByRole('textbox', { name: 'E-Mail Address' }).fill('invalid-email');
 
     // 3. Enter a password in the Password field.
-    await page.getByRole('textbox', { name: 'Password' }).fill('invalid-password');
+    await page.getByRole('textbox', { name: 'Password' }).fill(randomUUID());
 
     // 4. Submit the login form.
     await page.getByRole('button', { name: 'Login' }).click();
