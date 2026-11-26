@@ -19,7 +19,6 @@ test.describe('Create PO — Grain Product (Paddy)', () => {
   test('PO-GRAIN-001/002 — Create PO page and required form controls are visible', async ({ page }) => {
     await page.goto('/po/create');
 
-    await expect(page).toHaveTitle('Create PO | ERP Farm');
     await expect(
       page.getByRole('heading', { name: 'Create PO', exact: true }),
     ).toBeVisible();

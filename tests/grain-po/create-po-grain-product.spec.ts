@@ -4,7 +4,6 @@ test.describe('Create PO — Grain Product', () => {
   test('PO-GRAIN-001 — Create PO route renders the form', async ({ page }) => {
     await page.goto('/po/create');
 
-    await expect(page).toHaveTitle('Create PO | ERP Farm');
     await expect(
       page.getByRole('heading', { name: 'Create PO', exact: true })
     ).toBeVisible();

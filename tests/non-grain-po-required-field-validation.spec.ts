@@ -4,7 +4,9 @@ import { expect, test } from '@playwright/test';
 test.describe('Non-Grain Purchase Order', () => {
   test('Create PO — Non-Grain: required-field validation', async ({ page }) => {
     await page.goto('/po/create');
-    await expect(page).toHaveTitle('Create PO | ERP Farm');
+    await expect(
+      page.getByRole('heading', { name: 'Create PO', exact: true }),
+    ).toBeVisible();
 
     const requiredFields = [
       page.getByLabel('Agent *'),

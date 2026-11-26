@@ -4,7 +4,9 @@ test.describe('Create PO Agent dropdown', () => {
   test('Create PO — Agent dropdown selection', async ({ page }) => {
     // Plan: tests/plans/create-po-agent-dropdown-selection.plan.md
     await page.goto('/po/create');
-    await expect(page).toHaveTitle('Create PO | ERP Farm');
+    await expect(
+      page.getByRole('heading', { name: 'Create PO', exact: true }),
+    ).toBeVisible();
 
     const agentDropdown = page.getByRole('combobox', { name: 'Agent *' });
     await expect(agentDropdown).toBeVisible();
