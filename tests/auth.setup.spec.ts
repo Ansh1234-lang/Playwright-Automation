@@ -5,16 +5,29 @@ import fs from 'node:fs/promises';
 const roles = [
   {
     name: 'Purchase Executive',
-    emailEnv: 'ERP_PRIYA_PURCHASE_EXECUTIVE_EMAIL',
-    passwordEnv: 'ERP_PRIYA_PURCHASE_EXECUTIVE_PASSWORD',
+    emailEnv: 'ERP_ARJUN_PURCHASE_EXECUTIVE_EMAIL',
+    passwordEnv: 'ERP_ARJUN_PURCHASE_EXECUTIVE_PASSWORD',
     stateFile: '.auth/purchase-executive.json',
   },
   {
     name: 'Security Guard',
-    emailEnv: 'ERP_MAHESH_SECURITY_GUARD_EMAIL',
-    passwordEnv: 'ERP_MAHESH_SECURITY_GUARD_PASSWORD',
+    emailEnv: 'ERP_ADITYA_SECURITY_GUARD_EMAIL',
+    passwordEnv: 'ERP_ADITYA_SECURITY_GUARD_PASSWORD',
     stateFile: '.auth/security-guard.json',
   },
+  {
+    name: 'Accounts Executive',
+    emailEnv: 'ERP_MIRA_ACCOUNTANT_EMAIL',
+    passwordEnv: 'ERP_MIRA_ACCOUNTANT_PASSWORD',
+    stateFile: '.auth/accounts-executive.json',
+  },
+  {
+    name: 'Weight Executive',
+  emailEnv: 'ERP_ARJUN_WEIGHT_EXECUTIVE_EMAIL',
+  passwordEnv: 'ERP_ARJUN_WEIGHT_EXECUTIVE_PASSWORD',
+  stateFile: '.auth/weight-executive.json',
+  },
+  
 ];
 
 for (const role of roles) {
